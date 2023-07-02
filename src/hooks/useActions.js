@@ -2,9 +2,11 @@ import { useMemo } from "react";
 import { useDispatch } from "react-redux"
 import { bindActionCreators } from "redux";
 import { actions } from "../favorites/favorites.slice";
+import * as userActions from "../store/user/user.actions";
 
 const rootActions = {
-    ...actions
+    ...actions,
+    ...userActions,
 }
 
 
@@ -12,7 +14,6 @@ const rootActions = {
 export const useActions = () => {
     const dispatch = useDispatch();
 
-    return useMemo(() => {
-        bindActionCreators(rootActions, dispatch)
-    }, [dispatch]);
+    return useMemo(() =>
+        bindActionCreators(rootActions, dispatch), [dispatch])
 }

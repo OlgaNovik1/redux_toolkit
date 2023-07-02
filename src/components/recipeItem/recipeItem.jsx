@@ -9,7 +9,7 @@ const RecipeItem = ({ recipe }) => {
     // const favorites = useSelector(state => state.favorites);
     // const dispatch = useDispatch();
     const { favorites } = useFavorites();
-    const toggleFavorites = useActions();
+    const { toggleFavorites } = useActions();
 
     console.log(favorites)
 

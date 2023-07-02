@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 // создаем состояние избранных рецептов
-
 const initialState = [];
 
 export const favoritesSlice = createSlice({
