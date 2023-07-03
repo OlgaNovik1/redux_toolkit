@@ -1,0 +1,33 @@
+.form {
+    padding: 10px;
+}
+
+
+.inputForm {
+    border: 1px solid transparent;
+    color: #222;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.inputForm:focus {
+    border-color: red;
+}
+
+.buttonForm {
+    border: none;
+    background-color: #d49090;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.buttonForm:hover {
+    background-color: #bb6969;
+}

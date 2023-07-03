@@ -11,7 +11,7 @@ const RecipeItem = ({ recipe }) => {
     const { favorites } = useFavorites();
     const { toggleFavorites } = useActions();
 
-    console.log(favorites)
+    // console.log(favorites)
 
     const isExist = favorites.some(r => r.id === recipe.id);
 

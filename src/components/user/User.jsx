@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useActions } from '../../hooks/useActions';
+import styles from './user.module.css'
 
 const User = () => {
     const { isLoading, error, user } = useSelector(state => state.user)
@@ -9,8 +10,8 @@ const User = () => {
 
 
     return (
-        <div>
-            <button onClick={() => getUserById(1)}>
+        <div className={styles.userContainer}>
+            <button onClick={() => getUserById(1)} className={styles.buttonUser}>
                 Get User
             </button>
             {isLoading ? <div>LOADING...</div> :
